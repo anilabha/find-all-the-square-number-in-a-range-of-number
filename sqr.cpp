@@ -14,13 +14,17 @@ using namespace std;
 int sqr(int n){
 
     int b=sqrt(n);
-    cout<<"after: "<<b<<endl;
+    if (b>=2){
     for(int i=2;i<=b;i++){
         int c=pow(i,2);
             cout<<"sqr number in the range of "<<n<<" is : "<< c<<endl;
 
 
 
+    }
+    }
+    else{
+        cout<<"no sqr number found!!!!!!!!!!!\n";
     }
 
 }
@@ -35,3 +39,4 @@ int main()
     sqr(n);
     return 0;
 }
+
